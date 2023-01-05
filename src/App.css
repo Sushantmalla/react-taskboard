@@ -1,8 +1,7 @@
-.App {
-  display: flex;
-}
 .panel-container {
-  min-height: 90vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
   background-color: aqua;
   border: 1px solid #61dafbaa;
 }
