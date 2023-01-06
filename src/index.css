@@ -13,15 +13,13 @@ body {
   font-weight: normal;
 }
 
-.flex {
+.App {
+  margin-top: 1rem;
+  min-height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.container-main {
-  min-height: 85vh;
 }
 
 /* TITLE */
@@ -46,7 +44,7 @@ body {
 .grid {
   flex: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
   padding: 0 2rem;
   width: 100%;
