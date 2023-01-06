@@ -3,7 +3,7 @@ import Drag from "./components/Drag";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container-main flex">
       <Drag />
     </div>
   );
