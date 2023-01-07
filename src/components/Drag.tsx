@@ -1,20 +1,26 @@
 import { tasks } from "../data";
+import { Panel } from "./Panel";
 import { useDragAndDrop } from "../utils/useDrag";
-import { ContainerCards } from "./ContainerCard";
 
-const title = ["todo", "doing", "review", "completed"];
+const title = [
+  { name: "todo", background: "#f2f2f2" },
+  { name: "doing", background: "#cccccc" },
+  { name: "review", background: "#f9edbe" },
+  { name: "completed", background: "#f0c36d" },
+];
 
 const Drag = () => {
   const { isDragging, listItems, handleDragging, handleUpdateList } =
     useDragAndDrop(tasks);
 
   return (
-    <div className="grid">
+    <div className="dragwrapper">
       {title.map((container) => (
-        <ContainerCards
+        <Panel
           items={listItems}
-          status={container}
-          key={container}
+          status={container.name}
+          key={container.name}
+          background={container.background}
           isDragging={isDragging}
           handleDragging={handleDragging}
           handleUpdateList={handleUpdateList}

@@ -41,7 +41,7 @@ body {
 }
 
 /* LAYOUT CARDS */
-.grid {
+.dragwrapper {
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -73,7 +73,8 @@ body {
 /* SINGLE CARD */
 .card-container {
   margin: 1rem 1rem 0 1rem;
-  background-color: slateblue;
+  color: #000;
+  background-color: rgb(216, 215, 226);
   border-radius: 5px;
   padding: 1rem;
   cursor: pointer;
@@ -93,12 +94,11 @@ body {
 }
 
 .card-container > p {
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 800px) {
-  .grid {
+  .dragwrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }

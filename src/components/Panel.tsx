@@ -1,16 +1,18 @@
 import { Key } from "react";
-import { CardItem } from "./CardItem";
+import { Task } from "./Task";
 
-export const ContainerCards = ({
+export const Panel = ({
   items = [],
   status,
   isDragging,
+  background,
   handleDragging,
   handleUpdateList,
 }: {
   items: any[];
   status: string;
   isDragging: any;
+  background: string;
   handleDragging: (status: boolean) => any;
   handleUpdateList: (property: any, status: any) => any;
 }) => {
@@ -28,16 +30,13 @@ export const ContainerCards = ({
       className={`layout-cards ${isDragging ? "layout-dragging" : ""}`}
       onDrop={handleDrop}
       onDragOver={handleDragOver}
+      style={{ backgroundColor: background }}
     >
       <p>{status}</p>
       {items.map(
         (item: { status: any; id: Key | null | undefined }) =>
           status === item.status && (
-            <CardItem
-              data={item}
-              key={item.id}
-              handleDragging={handleDragging}
-            />
+            <Task data={item} key={item.id} handleDragging={handleDragging} />
           )
       )}
     </div>
