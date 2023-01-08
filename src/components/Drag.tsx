@@ -3,7 +3,7 @@ import { Panel } from "./Panel";
 import { useDragAndDrop } from "../utils/useDrag";
 
 const title = [
-  { name: "todo", background: "#f2f2f2" },
+  { name: "todo", background: "#eee" },
   { name: "doing", background: "#cccccc" },
   { name: "review", background: "#f9edbe" },
   { name: "completed", background: "#f0c36d" },

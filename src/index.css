@@ -7,8 +7,7 @@
 }
 
 body {
-  background-color: #1a1a1a;
-  color: #f2f2f2;
+  background-color: #f2f2f2;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
 }
@@ -22,43 +21,24 @@ body {
   flex-direction: column;
 }
 
-/* TITLE */
-.title {
-  text-align: center;
-  padding: 2rem 0;
-  gap: 0.5rem;
-}
-
-.title > h1 {
-  font-size: 3.5rem;
-  font-weight: 900;
-}
-
-.title > span {
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  font-weight: lighter;
-}
-
-/* LAYOUT CARDS */
+/* Panel */
 .dragwrapper {
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 2rem;
-  padding: 0 2rem;
+  gap: 1rem;
+  padding: 0 1rem;
   width: 100%;
 }
 
 .layout-cards {
-  border: 2px solid #ffffff8c;
+  border: 2px solid #fff;
   border-radius: 5px;
   transition: all 0.3s linear;
 }
 
 .layout-cards > p {
   border-radius: 5px;
-  background-color: black;
   text-align: center;
   padding: 1rem 0;
   font-weight: bold;
@@ -66,16 +46,17 @@ body {
 }
 
 .layout-dragging {
-  background: #ffffff17;
   border: 2px dashed #ffffff8c;
 }
 
 /* SINGLE CARD */
 .card-container {
   margin: 1rem 1rem 0 1rem;
+  border: 1px solid #e4dfdf;
   color: #000;
-  background-color: rgb(216, 215, 226);
+  background-color: #fff;
   border-radius: 5px;
+  box-shadow: 1px 1px 4px -3px;
   padding: 1rem;
   cursor: pointer;
   animation: fadeIn 0.3s ease-in-out;
