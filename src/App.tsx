@@ -1,4 +1,3 @@
-import "./App.css";
 import Drag from "./components/Drag";
 
 function App() {

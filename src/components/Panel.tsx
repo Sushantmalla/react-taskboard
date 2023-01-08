@@ -14,7 +14,7 @@ export const Panel = ({
   isDragging: any;
   background: string;
   handleDragging: (status: boolean) => any;
-  handleUpdateList: (property: any, status: any) => any;
+  handleUpdateList: (id: any, status: any) => any;
 }) => {
   const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
